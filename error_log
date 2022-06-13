@@ -1,0 +1,475 @@
+[2022-05-06 17:16:05 +0000] [16290] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/souto/Dev/xdiff_service/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/souto/Dev/xdiff_service
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/souto/Dev/xdiff_service/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/souto/Dev/xdiff_service/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f0c157f9820>
+  on_reload: <function OnReload.on_reload at 0x7f0c157f9940>
+  when_ready: <function WhenReady.when_ready at 0x7f0c157f9a60>
+  pre_fork: <function Prefork.pre_fork at 0x7f0c157f9b80>
+  post_fork: <function Postfork.post_fork at 0x7f0c157f9ca0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f0c157f9dc0>
+  worker_int: <function WorkerInt.worker_int at 0x7f0c157f9ee0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f0c1580c040>
+  pre_exec: <function PreExec.pre_exec at 0x7f0c1580c160>
+  pre_request: <function PreRequest.pre_request at 0x7f0c1580c280>
+  post_request: <function PostRequest.post_request at 0x7f0c1580c310>
+  child_exit: <function ChildExit.child_exit at 0x7f0c1580c430>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f0c1580c550>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f0c1580c670>
+  on_exit: <function OnExit.on_exit at 0x7f0c1580c790>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2022-05-06 17:16:05 +0000] [16290] [INFO] Starting gunicorn 20.1.0
+[2022-05-06 17:16:05 +0000] [16290] [DEBUG] Arbiter booted
+[2022-05-06 17:16:05 +0000] [16290] [INFO] Listening at: unix:/home/souto/Dev/xdiff_service/gunicorn.sock (16290)
+[2022-05-06 17:16:05 +0000] [16290] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2022-05-06 17:16:05 +0000] [16305] [INFO] Booting worker with pid: 16305
+[2022-05-06 17:16:05 +0000] [16306] [INFO] Booting worker with pid: 16306
+[2022-05-06 17:16:05 +0000] [16307] [INFO] Booting worker with pid: 16307
+[2022-05-06 17:16:05 +0000] [16290] [DEBUG] 3 workers
+[2022-05-06 17:16:06 +0000] [16305] [INFO] Started server process [16305]
+[2022-05-06 17:16:06 +0000] [16305] [INFO] Waiting for application startup.
+[2022-05-06 17:16:06 +0000] [16305] [INFO] Application startup complete.
+[2022-05-06 17:16:06 +0000] [16306] [INFO] Started server process [16306]
+[2022-05-06 17:16:06 +0000] [16306] [INFO] Waiting for application startup.
+[2022-05-06 17:16:06 +0000] [16306] [INFO] Application startup complete.
+[2022-05-06 17:16:06 +0000] [16307] [INFO] Started server process [16307]
+[2022-05-06 17:16:06 +0000] [16307] [INFO] Waiting for application startup.
+[2022-05-06 17:16:06 +0000] [16307] [INFO] Application startup complete.
+[2022-05-09 09:04:37 +0000] [16290] [INFO] Handling signal: term
+[2022-05-09 09:04:37 +0000] [16306] [INFO] Shutting down
+[2022-05-09 09:04:37 +0000] [16307] [INFO] Shutting down
+[2022-05-09 09:04:37 +0000] [16306] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-05-09 09:04:37 +0000] [16307] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-05-09 09:04:37 +0000] [16305] [INFO] Shutting down
+[2022-05-09 09:04:37 +0000] [16305] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-05-09 09:04:37 +0000] [16306] [INFO] Waiting for application shutdown.
+[2022-05-09 09:04:37 +0000] [16306] [INFO] Application shutdown complete.
+[2022-05-09 09:04:37 +0000] [16306] [INFO] Finished server process [16306]
+[2022-05-09 09:04:37 +0000] [16306] [INFO] Worker exiting (pid: 16306)
+[2022-05-09 09:04:37 +0000] [16305] [INFO] Waiting for application shutdown.
+[2022-05-09 09:04:37 +0000] [16305] [INFO] Application shutdown complete.
+[2022-05-09 09:04:37 +0000] [16305] [INFO] Finished server process [16305]
+[2022-05-09 09:04:37 +0000] [16305] [INFO] Worker exiting (pid: 16305)
+[2022-05-09 09:04:37 +0000] [16307] [INFO] Waiting for application shutdown.
+[2022-05-09 09:04:37 +0000] [16307] [INFO] Application shutdown complete.
+[2022-05-09 09:04:37 +0000] [16307] [INFO] Finished server process [16307]
+[2022-05-09 09:04:37 +0000] [16307] [INFO] Worker exiting (pid: 16307)
+[2022-05-09 09:04:38 +0000] [16290] [INFO] Shutting down: Master
+[2022-05-20 11:23:56 +0000] [742] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/souto/Dev/xdiff_service/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/souto/Dev/xdiff_service
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/souto/Dev/xdiff_service/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/souto/Dev/xdiff_service/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f05c7675820>
+  on_reload: <function OnReload.on_reload at 0x7f05c7675940>
+  when_ready: <function WhenReady.when_ready at 0x7f05c7675a60>
+  pre_fork: <function Prefork.pre_fork at 0x7f05c7675b80>
+  post_fork: <function Postfork.post_fork at 0x7f05c7675ca0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f05c7675dc0>
+  worker_int: <function WorkerInt.worker_int at 0x7f05c7675ee0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f05c7689040>
+  pre_exec: <function PreExec.pre_exec at 0x7f05c7689160>
+  pre_request: <function PreRequest.pre_request at 0x7f05c7689280>
+  post_request: <function PostRequest.post_request at 0x7f05c7689310>
+  child_exit: <function ChildExit.child_exit at 0x7f05c7689430>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f05c7689550>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f05c7689670>
+  on_exit: <function OnExit.on_exit at 0x7f05c7689790>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2022-05-20 11:23:56 +0000] [742] [INFO] Starting gunicorn 20.1.0
+[2022-05-20 11:23:56 +0000] [742] [DEBUG] Arbiter booted
+[2022-05-20 11:23:56 +0000] [742] [INFO] Listening at: unix:/home/souto/Dev/xdiff_service/gunicorn.sock (742)
+[2022-05-20 11:23:56 +0000] [742] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2022-05-20 11:23:56 +0000] [882] [INFO] Booting worker with pid: 882
+[2022-05-20 11:23:56 +0000] [883] [INFO] Booting worker with pid: 883
+[2022-05-20 11:23:56 +0000] [884] [INFO] Booting worker with pid: 884
+[2022-05-20 11:23:56 +0000] [742] [DEBUG] 3 workers
+[2022-05-20 11:23:57 +0000] [882] [INFO] Started server process [882]
+[2022-05-20 11:23:57 +0000] [882] [INFO] Waiting for application startup.
+[2022-05-20 11:23:57 +0000] [882] [INFO] Application startup complete.
+[2022-05-20 11:23:57 +0000] [884] [INFO] Started server process [884]
+[2022-05-20 11:23:57 +0000] [884] [INFO] Waiting for application startup.
+[2022-05-20 11:23:57 +0000] [884] [INFO] Application startup complete.
+[2022-05-20 11:23:57 +0000] [883] [INFO] Started server process [883]
+[2022-05-20 11:23:57 +0000] [883] [INFO] Waiting for application startup.
+[2022-05-20 11:23:57 +0000] [883] [INFO] Application startup complete.
+[2022-06-10 12:12:44 +0000] [883] [INFO] Shutting down
+[2022-06-10 12:12:44 +0000] [882] [INFO] Shutting down
+[2022-06-10 12:12:44 +0000] [884] [INFO] Shutting down
+[2022-06-10 12:12:44 +0000] [883] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-06-10 12:12:44 +0000] [742] [INFO] Handling signal: term
+[2022-06-10 12:12:44 +0000] [882] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-06-10 12:12:44 +0000] [884] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-06-10 12:12:44 +0000] [883] [INFO] Waiting for application shutdown.
+[2022-06-10 12:12:44 +0000] [882] [INFO] Waiting for application shutdown.
+[2022-06-10 12:12:44 +0000] [883] [INFO] Application shutdown complete.
+[2022-06-10 12:12:44 +0000] [883] [INFO] Finished server process [883]
+[2022-06-10 12:12:44 +0000] [882] [INFO] Application shutdown complete.
+[2022-06-10 12:12:44 +0000] [882] [INFO] Finished server process [882]
+[2022-06-10 12:12:44 +0000] [882] [INFO] Worker exiting (pid: 882)
+[2022-06-10 12:12:44 +0000] [883] [INFO] Worker exiting (pid: 883)
+[2022-06-10 12:12:44 +0000] [884] [INFO] Waiting for application shutdown.
+[2022-06-10 12:12:45 +0000] [884] [INFO] Application shutdown complete.
+[2022-06-10 12:12:45 +0000] [884] [INFO] Finished server process [884]
+[2022-06-10 12:12:45 +0000] [884] [INFO] Worker exiting (pid: 884)
+[2022-06-10 12:12:45 +0000] [742] [WARNING] Worker with pid 882 was terminated due to signal 15
+[2022-06-10 12:12:45 +0000] [742] [WARNING] Worker with pid 883 was terminated due to signal 15
+[2022-06-10 12:12:45 +0000] [742] [WARNING] Worker with pid 884 was terminated due to signal 15
+[2022-06-10 12:12:45 +0000] [742] [INFO] Shutting down: Master
+[2022-06-10 12:13:41 +0000] [719] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/souto/Dev/xdiff_service/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/souto/Dev/xdiff_service
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/souto/Dev/xdiff_service/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/souto/Dev/xdiff_service/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f193f70a820>
+  on_reload: <function OnReload.on_reload at 0x7f193f70a940>
+  when_ready: <function WhenReady.when_ready at 0x7f193f70aa60>
+  pre_fork: <function Prefork.pre_fork at 0x7f193f70ab80>
+  post_fork: <function Postfork.post_fork at 0x7f193f70aca0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f193f70adc0>
+  worker_int: <function WorkerInt.worker_int at 0x7f193f70aee0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f193f71d040>
+  pre_exec: <function PreExec.pre_exec at 0x7f193f71d160>
+  pre_request: <function PreRequest.pre_request at 0x7f193f71d280>
+  post_request: <function PostRequest.post_request at 0x7f193f71d310>
+  child_exit: <function ChildExit.child_exit at 0x7f193f71d430>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f193f71d550>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f193f71d670>
+  on_exit: <function OnExit.on_exit at 0x7f193f71d790>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2022-06-10 12:13:41 +0000] [719] [INFO] Starting gunicorn 20.1.0
+[2022-06-10 12:13:41 +0000] [719] [DEBUG] Arbiter booted
+[2022-06-10 12:13:41 +0000] [719] [INFO] Listening at: unix:/home/souto/Dev/xdiff_service/gunicorn.sock (719)
+[2022-06-10 12:13:41 +0000] [719] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2022-06-10 12:13:41 +0000] [876] [INFO] Booting worker with pid: 876
+[2022-06-10 12:13:41 +0000] [877] [INFO] Booting worker with pid: 877
+[2022-06-10 12:13:41 +0000] [878] [INFO] Booting worker with pid: 878
+[2022-06-10 12:13:41 +0000] [719] [DEBUG] 3 workers
+[2022-06-10 12:13:52 +0000] [877] [INFO] Started server process [877]
+[2022-06-10 12:13:52 +0000] [877] [INFO] Waiting for application startup.
+[2022-06-10 12:13:52 +0000] [877] [INFO] Application startup complete.
+[2022-06-10 12:13:52 +0000] [878] [INFO] Started server process [878]
+[2022-06-10 12:13:52 +0000] [878] [INFO] Waiting for application startup.
+[2022-06-10 12:13:52 +0000] [878] [INFO] Application startup complete.
+[2022-06-10 12:13:52 +0000] [876] [INFO] Started server process [876]
+[2022-06-10 12:13:52 +0000] [876] [INFO] Waiting for application startup.
+[2022-06-10 12:13:52 +0000] [876] [INFO] Application startup complete.
+[2022-06-11 23:06:46 +0000] [719] [INFO] Handling signal: term
+[2022-06-11 23:06:46 +0000] [877] [INFO] Shutting down
+[2022-06-11 23:06:46 +0000] [878] [INFO] Shutting down
+[2022-06-11 23:06:46 +0000] [877] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-06-11 23:06:46 +0000] [878] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-06-11 23:06:46 +0000] [876] [INFO] Shutting down
+[2022-06-11 23:06:46 +0000] [876] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-06-11 23:06:46 +0000] [877] [INFO] Waiting for application shutdown.
+[2022-06-11 23:06:46 +0000] [878] [INFO] Waiting for application shutdown.
+[2022-06-11 23:06:46 +0000] [877] [INFO] Application shutdown complete.
+[2022-06-11 23:06:46 +0000] [878] [INFO] Application shutdown complete.
+[2022-06-11 23:06:46 +0000] [878] [INFO] Finished server process [878]
+[2022-06-11 23:06:46 +0000] [877] [INFO] Finished server process [877]
+[2022-06-11 23:06:46 +0000] [877] [INFO] Worker exiting (pid: 877)
+[2022-06-11 23:06:46 +0000] [878] [INFO] Worker exiting (pid: 878)
+[2022-06-11 23:06:46 +0000] [876] [INFO] Waiting for application shutdown.
+[2022-06-11 23:06:46 +0000] [876] [INFO] Application shutdown complete.
+[2022-06-11 23:06:46 +0000] [876] [INFO] Finished server process [876]
+[2022-06-11 23:06:46 +0000] [876] [INFO] Worker exiting (pid: 876)
+[2022-06-11 23:06:46 +0000] [719] [INFO] Shutting down: Master
+[2022-06-11 23:07:55 +0000] [738] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/souto/Dev/xdiff_service/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/souto/Dev/xdiff_service
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/souto/Dev/xdiff_service/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/souto/Dev/xdiff_service/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7ff2745f0820>
+  on_reload: <function OnReload.on_reload at 0x7ff2745f0940>
+  when_ready: <function WhenReady.when_ready at 0x7ff2745f0a60>
+  pre_fork: <function Prefork.pre_fork at 0x7ff2745f0b80>
+  post_fork: <function Postfork.post_fork at 0x7ff2745f0ca0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7ff2745f0dc0>
+  worker_int: <function WorkerInt.worker_int at 0x7ff2745f0ee0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7ff274604040>
+  pre_exec: <function PreExec.pre_exec at 0x7ff274604160>
+  pre_request: <function PreRequest.pre_request at 0x7ff274604280>
+  post_request: <function PostRequest.post_request at 0x7ff274604310>
+  child_exit: <function ChildExit.child_exit at 0x7ff274604430>
+  worker_exit: <function WorkerExit.worker_exit at 0x7ff274604550>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7ff274604670>
+  on_exit: <function OnExit.on_exit at 0x7ff274604790>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2022-06-11 23:07:55 +0000] [738] [INFO] Starting gunicorn 20.1.0
+[2022-06-11 23:07:55 +0000] [738] [DEBUG] Arbiter booted
+[2022-06-11 23:07:55 +0000] [738] [INFO] Listening at: unix:/home/souto/Dev/xdiff_service/gunicorn.sock (738)
+[2022-06-11 23:07:55 +0000] [738] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2022-06-11 23:07:55 +0000] [876] [INFO] Booting worker with pid: 876
+[2022-06-11 23:07:55 +0000] [882] [INFO] Booting worker with pid: 882
+[2022-06-11 23:07:55 +0000] [888] [INFO] Booting worker with pid: 888
+[2022-06-11 23:07:56 +0000] [738] [DEBUG] 3 workers
+[2022-06-11 23:07:57 +0000] [876] [INFO] Started server process [876]
+[2022-06-11 23:07:57 +0000] [876] [INFO] Waiting for application startup.
+[2022-06-11 23:07:57 +0000] [876] [INFO] Application startup complete.
+[2022-06-11 23:07:57 +0000] [882] [INFO] Started server process [882]
+[2022-06-11 23:07:57 +0000] [882] [INFO] Waiting for application startup.
+[2022-06-11 23:07:57 +0000] [882] [INFO] Application startup complete.
+[2022-06-11 23:07:57 +0000] [888] [INFO] Started server process [888]
+[2022-06-11 23:07:57 +0000] [888] [INFO] Waiting for application startup.
+[2022-06-11 23:07:57 +0000] [888] [INFO] Application startup complete.
