@@ -6,6 +6,7 @@ from mongita import MongitaClientDisk
 from typing import Dict, List
 from pydantic import BaseModel
 from pyexpat import model
+from fastapi.middleware.cors import CORSMiddleware
 
 # objects
 
@@ -38,6 +39,22 @@ class Report(BaseModel):
 # ]
 
 app = FastAPI()
+
+origins = [
+    "https://cat.capstan.be",
+    "https://cat.capstan.be/OmegaT/MTPE-API-test2",
+    "https://localhost.tiangolo.com",
+    "http://localhost",
+    "http://localhost:8080",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=['*'], # origins,
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 client = MongitaClientDisk()
 db = client.xdiff_db
